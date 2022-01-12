@@ -72,6 +72,90 @@
           <div class="backdrop is-hidden" data-modal>
             <section class="modal">
               <button class="modal-button" data-modal-close></button>
+
+              <div class="modal-container">
+                <h2 class="modal-header">
+                  Оставьте свои данные, мы вам перезвоним
+                </h2>
+
+                <form name="leave-data" class="leave-data">
+                  <label for="username" class="leave-data-label"
+                    ><span class="leave-data-span">Имя</span>
+
+                    <input
+                      type="text"
+                      name="username"
+                      id="username"
+                      class="leave-data-input"
+                    />
+                    <svg style="width: 18; height: 18" class="leave-data-svg">
+                      <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                  </label>
+
+                  <label for="user-tel" class="leave-data-label"
+                    ><span class="leave-data-span">Телефон</span>
+
+                    <input
+                      type="tel"
+                      name="tel"
+                      id="user-tel"
+                      class="leave-data-input"
+                    />
+                    <svg class="leave-data-tel">
+                      <use href="./images/icons.svg#icon-tel"></use>
+                    </svg>
+                  </label>
+
+                  <label for="user-email" class="leave-data-label"
+                    ><span class="leave-data-span">Почта</span>
+
+                    <input
+                      type="email"
+                      name="email"
+                      id="user-email"
+                      class="leave-data-input"
+                    />
+                    <svg style="width: 18; height: 18" class="leave-data-svg">
+                      <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                  </label>
+
+                  <label for="feedback" class="leave-data-label"
+                    ><span class="leave-data-span">Комментарий</span>
+                    <textarea
+                      name="feedback"
+                      id="feedback"
+                      rows="5"
+                      placeholder="Введите текст"
+                      class="leave-data-text"
+                    ></textarea>
+                  </label>
+
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="agreement"
+                      class="checkbox-agreement"
+                    />
+                    <svg class="checkbox-check">
+                      <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                    <svg style="width: 16; height: 16" class="checkbox-svg">
+                      <use href="./images/icons.svg#icon-agreement"></use>
+                    </svg>
+
+                    <p>
+                      Соглашаюсь с рассылкой и принимаю
+                      <a href="#" class="checkbox-link">Условия договора</a>
+                    </p>
+                  </label>
+                  <button type="submit" class="leave-data-button">
+                    Отправить
+                  </button>
+                </form>
+              </div>
             </section>
           </div>
         </section>
@@ -533,6 +617,27 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-subscribe">
+          <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
+          <form name="subscribe-form">
+            <label for="footer-email" class="email-label">
+              <input
+                type="email"
+                name="email"
+                id="footer-email"
+                placeholder="E-mail"
+                class="email-input"
+              />
+            </label>
+
+            <button type="submit" class="email-button">
+              <span class="email-button-span">Подписаться</span>
+              <svg class="email-button-svg" style="width: 24; height: 24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
