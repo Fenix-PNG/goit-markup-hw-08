@@ -1,1 +1,42 @@
+@import './utils/variables';
+@import './base/custom';
+
+//header
+@import './components/header';
+
+//index
+
+    //main
+    @import './components/hero';
+    @import './components/backdrop';
+
+    //explain
+    @import './components/explain';
+
+    //What are we doing
+    @import './components/doing';
+
+    //our team
+    @import './components/team';
+
+    //regular customers
+    @import './components/customers';
+
+//portfolio
+
+    @import './components/portfolio';
+
+//footer
+
+    //container
+    @import './components/container';
+
+    //address
+    @import './components/address';
+
+    //social
+    @import './components/social';
+
+    //subscribe
+    @import './components/subscribe';
 
