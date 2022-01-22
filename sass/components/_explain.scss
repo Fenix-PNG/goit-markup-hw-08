@@ -1,0 +1,47 @@
+.section.explain {
+    padding-top: 94px;
+  }
+  
+  .explain-ul {
+    display: flex;
+  }
+  
+  .explain-ul__list:nth-child(-n + 3) {
+    width: 270px;
+    margin-right: 30px;
+  }
+  
+  .explain-ul__list:last-child {
+    width: 270px;
+  }
+  
+  .explain-ul__header {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  
+  .explain-ul__p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--text-secondary);
+  }
+  
+  .explain-ul__div {
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .explain-ul__div:hover,
+  .explain-ul__div:focus {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
