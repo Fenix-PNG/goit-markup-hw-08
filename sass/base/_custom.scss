@@ -1,1 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
 
+.section {
+  padding-bottom: 94px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+}
