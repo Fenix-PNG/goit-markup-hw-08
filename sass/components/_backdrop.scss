@@ -1,40 +1,39 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-  }
-  
-  .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  .is-hidden .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  .modal {
     transform: scale(0.5);
   }
-  
-  .modal {
-    width: 528px;
-    height: 581px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-  
-  .modal__button {
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-right: 40px;
+  padding-left: 40px;
+
+  &__button {
     width: 30px;
     height: 30px;
     margin-top: 8px;
@@ -43,7 +42,7 @@
     box-sizing: border-box;
     border-radius: 50%;
     background-color: #fff;
-  
+
     background-image: url(../images/cross.svg);
     background-repeat: no-repeat;
     background-position-x: center;
@@ -54,19 +53,19 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .modal__button:hover,
-  .modal__button:focus {
+
+  &__button:hover,
+  &__button:focus {
     cursor: pointer;
     fill: var(--theme-color);
   }
-  
-  .modal__container {
+
+  &__container {
     display: flex;
     flex-direction: column;
   }
-  
-  .modal__header {
+
+  &__header {
     font-family: Roboto;
     font-weight: bold;
     font-size: 20px;
@@ -76,38 +75,36 @@
     color: var(--text-primary);
     margin-bottom: 12px;
   }
-  
-  .leave-data {
-    font-family: Roboto;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: var(--text-secondary);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  
-  
-  .leave-data__label {
+}
+
+.leave-data {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__label {
     display: flex;
     flex-direction: column;
     position: relative;
     margin-bottom: 10px;
   }
-  
-  .leave-data__span {
+
+  &__span {
     margin-bottom: 4px;
   }
-  
-  .leave-data__svg {
+
+  &__svg {
     position: absolute;
     top: 28px;
     left: 12px;
   }
-  
-  .leave-data__tel {
+
+  &__tel {
     width: 18px;
     height: 18px;
     padding: 2.5px;
@@ -115,8 +112,8 @@
     top: 28px;
     left: 12px;
   }
-  
-  .leave-data__input {
+
+  &__input {
     position: relative;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -128,17 +125,17 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .leave-data__input:focus {
+
+  &__input:focus {
     outline: 1px solid var(--theme-color);
   }
-  
-  .leave-data__input:focus + .leave-data-svg,
-  .leave-data__input:focus + .leave-data-tel {
+
+  &__input:focus + &__svg,
+  &__input:focus + &__tel {
     fill: var(--theme-color);
   }
-  
-  .leave-data__text {
+
+  &__text {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
@@ -150,12 +147,12 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .leave-data__text:focus {
+
+  &__text:focus {
     outline: 1px solid var(--theme-color);
   }
-  
-  .leave-data__button {
+
+  &__button {
     width: 200px;
     height: 50px;
     background-color: var(--theme-color);
@@ -168,40 +165,40 @@
     letter-spacing: 0.06em;
     color: #fff;
   }
-  
-  .leave-data__button:hover,
-  .leave-data__button:focus {
+
+  &__button:hover,
+  &__button:focus {
     cursor: pointer;
   }
-  
-  .checkbox {
-    font-size: 14px;
-    line-height: 1.7;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .checkbox:hover,
-  .checkbox:focus {
+}
+
+.checkbox {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
     cursor: pointer;
   }
-  
-  .checkbox__agreement {
+
+  &__agreement {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     position: absolute;
   }
-  
-  .checkbox__svg {
+
+  &__svg {
     width: 16px;
     height: 16px;
     margin-right: 8px;
   }
-  
-  .checkbox__check {
+
+  &__check {
     background-color: var(--theme-color);
     width: 16px;
     height: 16px;
@@ -212,12 +209,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .checkbox__agreement:checked + .checkbox__check {
+
+  &__agreement:checked + &__check {
     visibility: visible;
   }
-  
-  .checkbox__link {
+
+  &__link {
     color: var(--theme-color);
     text-decoration: underline;
   }
+}

@@ -1,24 +1,21 @@
 .header {
-    border-bottom: 1px #ececec solid;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .container-header {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .sites-nav {
-    display: flex;
-  }
-  
-  
-  
-  .sites-nav__main-link {
+  border-bottom: 1px #ececec solid;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sites-nav {
+  display: flex;
+
+  &__main-link {
     margin-right: 94px;
     font-family: Raleway;
     font-weight: bold;
@@ -27,19 +24,19 @@
     letter-spacing: 0.03em;
     color: #000;
   }
-  
-  .sites-nav__web {
+
+  &__web {
     color: var(--theme-color);
   }
-  
-  .nav-ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 294px;
-  }
-  
-  .nav-ul__link {
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 294px;
+
+  &__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -51,14 +48,14 @@
     justify-content: end;
     position: relative;
   }
-  
-  .nav-ul__link:hover,
-  .nav-ul__link:focus,
-  .nav-ul__link.current {
+
+  &__link:hover,
+  &__link:focus,
+  &__link.current {
     color: var(--theme-color);
   }
-  
-  .nav-ul__link.current.studio::after {
+
+  &__link.current.studio::after {
     content: "";
     width: 49px;
     height: 4px;
@@ -67,8 +64,8 @@
     background: #2196f3;
     border-radius: 2px;
   }
-  
-  .nav-ul__link.current.portfolio::after {
+
+  &__link.current.portfolio::after {
     content: "";
     width: 77px;
     height: 4px;
@@ -77,16 +74,17 @@
     background: #2196f3;
     border-radius: 2px;
   }
-  
-  a[href="mailto:info@devstudio.com"] {
-    margin-right: 50px;
-  }
-  
-  .connection {
-    display: flex;
-    align-items: center;
-  }
-  .connection__link {
+}
+
+a[href="mailto:info@devstudio.com"] {
+  margin-right: 50px;
+}
+
+.connection {
+  display: flex;
+  align-items: center;
+
+  &__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -100,18 +98,18 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .connection__envelope {
+
+  &__envelope {
     margin-right: 10px;
   }
-  
-  .connection__phone {
+
+  &__phone {
     margin-right: 10px;
   }
-  
-  .connection__link:hover,
-  .connection__link:focus {
+
+  &__link:hover,
+  &__link:focus {
     color: var(--theme-color);
     fill: var(--theme-color);
   }
-  
+}
