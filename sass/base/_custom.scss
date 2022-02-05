@@ -6,14 +6,22 @@
 }
 
 .section {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 body {
