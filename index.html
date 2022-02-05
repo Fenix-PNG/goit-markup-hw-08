@@ -57,6 +57,81 @@
               +38 096 111 11 11
             </a>
           </div>
+
+          <button type="button" class="menu-button" data-modal-mobile-open>
+            <svg
+              class="menu-button__svg"
+              width="40px"
+              height="40px"
+              aria-label="переключатель мобильного меню"
+            >
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container is-hidden" data-modal-mobile>
+            <button class="menu-container__button" data-modal-mobile-close>
+              <svg
+                class="menu-container__svg"
+                aria-label="переключатель мобильного меню"
+              >
+                <use href="./images/icons.svg#icon-cross"></use>
+              </svg>
+            </button>
+
+            <div class="menu-container__main">
+              <ul class="menu-container__nav">
+                <li>
+                  <a href="#" class="menu-container__nav-link current"
+                    >Студия</a
+                  >
+                </li>
+                <li>
+                  <a href="./portfolio.html" class="menu-container__nav-link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="menu-container__nav-link">Контакты</a>
+                </li>
+              </ul>
+              <div class="menu-container__two-sections">
+                <div class="menu-container__two-links">
+                  <a href="tel:+380961111111" class="menu-container__link-tel">
+                    +38 096 111 11 11
+                  </a>
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="menu-container__link-mail"
+                  >
+                    info@devstudio.com
+                  </a>
+                </div>
+                <ul class="menu-container__connection">
+                  <li>
+                    <a href="" class="menu-container__connection-link"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="menu-container__connection-link"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="menu-container__connection-link"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="menu-container__connection-link"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -151,11 +226,10 @@
                     <svg style="width: 16; height: 16" class="checkbox__svg">
                       <use href="./images/icons.svg#icon-agreement"></use>
                     </svg>
-
-                    <p>
+                    <span>
                       Соглашаюсь с рассылкой и принимаю
                       <a href="#" class="checkbox__link">Условия договора</a>
-                    </p>
+                    </span>
                   </label>
                   <button type="submit" class="leave-data__button">
                     Отправить
@@ -226,7 +300,7 @@
 
       <!-- What are we doing -->
 
-      <section class="section">
+      <section class="section todo">
         <div class="container">
           <h2 class="section__header">Чем мы занимаемся</h2>
           <ul class="todo-ul">
@@ -268,12 +342,32 @@
           <h2 class="section__header">Наша команда</h2>
           <ul class="team-ul">
             <li class="team-ul__list">
-              <img
-                src="./images/img1.jpg"
-                class="team-ul__img"
-                alt="мужчина в очках с бородой"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/img1-mobile.jpg    1x,
+                    ./images/img1-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img1-tablet.jpg    1x,
+                    ./images/img1-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
+                />
+                <img
+                  src="./images/img1.jpg"
+                  class="team-ul__img"
+                  alt="мужчина в очках с бородой"
+                />
+              </picture>
+
               <div class="team-ul__container">
                 <h3 class="team-ul__sub-header">Игорь Демьяненко</h3>
                 <p class="team-ul__sub-p">Product Designer</p>
@@ -326,12 +420,32 @@
               </div>
             </li>
             <li class="team-ul__list">
-              <img
-                src="./images/img2.jpg"
-                class="team-ul__img"
-                alt=" женщина в очках"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/img2-mobile.jpg    1x,
+                    ./images/img2-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img2-tablet.jpg    1x,
+                    ./images/img2-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+                />
+                <img
+                  src="./images/img2.jpg"
+                  class="team-ul__img"
+                  alt=" женщина в очках"
+                />
+              </picture>
+
               <div class="team-ul__container">
                 <h3 class="team-ul__sub-header">Ольга Репина</h3>
                 <p class="team-ul__sub-p">Frontend Developer</p>
@@ -384,12 +498,32 @@
               </div>
             </li>
             <li class="team-ul__list">
-              <img
-                src="./images/img3.jpg"
-                class="team-ul__img"
-                alt="мужчина"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/img3-mobile.jpg    1x,
+                    ./images/img3-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img3-tablet.jpg    1x,
+                    ./images/img3-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+                />
+                <img
+                  src="./images/img3.jpg"
+                  class="team-ul__img"
+                  alt="мужчина"
+                />
+              </picture>
+
               <div class="team-ul__container">
                 <h3 class="team-ul__sub-header">Николай Тарасов</h3>
                 <p class="team-ul__sub-p">Marketing</p>
@@ -442,12 +576,32 @@
               </div>
             </li>
             <li class="team-ul__list">
-              <img
-                src="./images/img4.jpg"
-                class="team-ul__img"
-                alt="мужчина в очках"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/img4-mobile.jpg    1x,
+                    ./images/img4-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img4-tablet.jpg    1x,
+                    ./images/img4-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x"
+                />
+                <img
+                  src="./images/img4.jpg"
+                  class="team-ul__img"
+                  alt="мужчина в очках"
+                />
+              </picture>
+
               <div class="team-ul__container">
                 <h3 class="team-ul__sub-header">Михаил Ермаков</h3>
                 <p class="team-ul__sub-p">UI Designer</p>
@@ -626,7 +780,7 @@
         </div>
         <div class="subscribe">
           <h2 class="subscribe__header">Подпишитесь на рассылку</h2>
-          <form name="subscribe-form">
+          <form name="subscribe-form" class="subscribe-form">
             <label for="footer-email" class="email-label">
               <input
                 type="email"
@@ -648,5 +802,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
